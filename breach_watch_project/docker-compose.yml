@@ -1,0 +1,9 @@
+services:
+  breach-watch:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - breach-watch-data:/app/data
+volumes:
+  breach-watch-data:
